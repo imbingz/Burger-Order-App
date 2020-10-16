@@ -2,8 +2,8 @@
  ============================================================================================== */
 
 const express = require('express');
-
-const connection = require('./config/connection')
+const exphbs = require('express-handlebars');
+const connection = require('./config/connection');
 
 const app = express(); 
 
@@ -13,8 +13,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 
-
-
+//Handglebars setup
+app.engine('handlebars', exphbs({ defaultLayout: "main" }));
+app.set('view engine', "handlebars");
 
 
 
