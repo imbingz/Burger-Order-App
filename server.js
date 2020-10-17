@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 
+//Middleware to parse application body
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); 
+
 //Handglebars setup
 app.engine('handlebars', exphbs({ defaultLayout: "main" }));
 app.set('view engine', "handlebars");
