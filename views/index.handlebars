@@ -1,4 +1,36 @@
+{{!------  Title ------}}
 <div class="row">
   <h1 class="title"> Eat-Da-Burger</h1>
   <img src="/assets/images/truck300.png" alt="burger truck with a happy burger on the top">
+</div>
+
+<div class="row">
+  {{!------  List of burgers to devour ------}}
+  <div class="six columns list">
+    <div>
+      <h4> Choose a burger to devour
+        <i class="fa fa-cutlery utensil" aria-hidden="true"></i>
+      </h4>
+    </div>
+    {{!-- Dynamically generated list --}}
+    <div>
+      <ul class="list">
+        <li class="list-item" data-burger="burgerId"> Item 1
+          <button type="submit" class="u-pull-right devour-btn" id="burgerId"><img src="./public/assets/images/2.png"
+              alt="burger_name">
+          </button>
+        </li>
+        <li class="list-item" data-burger="burgerId"> Item 2
+          <button type="submit" class="u-pull-right devour-btn" id="burgerId"><img src="./public/assets/images/2.png"
+              alt="burger_name">
+          </button>
+        </li>
+        <li class="list-item" data-burger="burgerId"> Item 3
+          <button type="submit" class="u-pull-right devour-btn" id="burgerId"><img src="./public/assets/images/2.png"
+              alt="burger_name">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
