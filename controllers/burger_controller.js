@@ -4,10 +4,9 @@
 const express = require('express');
 const burger = require('../models/burger');
 
-const Router = express.Router(); 
+const router = express.Router(); 
 
 
 /* SETUP ROUTES 
  ============================================================================================== */
 
- 
