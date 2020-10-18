@@ -36,8 +36,6 @@ function translateSql(obj) {
 }
 
 
-
-
 /* CREATE ORM OBJ WITH METHODS FOR DATABASE
  ============================================================================================== */
 const orm = {
@@ -82,3 +80,8 @@ const orm = {
     cd(result)
   }
 }
+
+
+/* EXPORT MODULE
+ ============================================================================================== */
+module.exports = orm; 
