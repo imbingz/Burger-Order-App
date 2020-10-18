@@ -41,9 +41,13 @@
     </h4>
     {{!-- Dynamically generated list --}}
     <ul class="list devoured">
-      <li class="list-item" data-burger="burgerId">Item 1</li>
-      <li class="list-item" data-burger="burgerId">Item 2</li>
-      <li class="list-item" data-burger="burgerId">Item 3</li>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li class="list-item" data-id="{{this.id}}">
+          {{this.id}}. {{this.burger_name}}
+        </li>
+        {{/if}}
+        {{/each}}
     </ul>
   </div>
 </div>
