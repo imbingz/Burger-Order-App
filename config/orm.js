@@ -44,9 +44,9 @@ const orm = {
     let queryStr = "SELECT * FROM " + table + ";";
 
     connection.query(queryStr, (err, result) => {
-      if (err) throw err
+      if (err) throw err; 
+      cb(result)
     })
-    cb(result)
   },
 
   //insert method
@@ -56,8 +56,8 @@ const orm = {
     console.log(queryStr);
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
+      cb(result)
     });
-    cb(result)
   }, 
 
   //update method 
@@ -66,8 +66,8 @@ const orm = {
 
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
+      cb(result)
     })
-    cb(result)
   },
 
   //delete method
@@ -76,8 +76,8 @@ const orm = {
      
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
+      cb(result)
     });
-    cb(result)
   }
 }
 
