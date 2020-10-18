@@ -8,11 +8,25 @@ const connection = require('../config/connection');
 const orm = {
   //select all from the table
   selectAll: (table, cb) => {
-    let query = "SELECT * FROM " + table + ";";
+    let queryStr = "SELECT * FROM " + table + ";";
 
-    connection.query(query, (err, result) => {
+    connection.query(queryStr, (err, result) => {
       if (err) throw err
     })
     cd(result)
-  }
+  },
+
+  //insert method
+  insertOne: (table, cols, vals, cb) => {
+    let queryStr = "INSERT INTO " + table + "(" + cols.toString + ")" + "VALUES (" + createQmarks(vals.length) + ");";
+
+    console.log(queryStr);
+    
+    connection.query(queryStr, (err, result) => {
+      if (err) throw err;
+    });
+    cd(result)
+  }, 
+
+
 }
