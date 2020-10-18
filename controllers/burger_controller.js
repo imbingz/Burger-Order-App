@@ -10,7 +10,7 @@ const router = express.Router();
 /* SETUP ROUTES 
  ============================================================================================== */
 
- //Get route
+//Get route
 router.get('/', (req, res) => {
   burger.seletAll(data => {
     const hbsObject = {
@@ -21,3 +21,14 @@ router.get('/', (req, res) => {
   });
 });
 
+//Post route
+router.post('/api/burgers', (req, res) => {
+  burger.insertOne(
+    ["burger_name", "devoured"],
+    [req.body.burger_name, req.body.devoured],
+    (result) => {
+      //send back ID of the new burger
+      res.json({ id: result.insertId });
+    }
+  );
+});
