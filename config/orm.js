@@ -3,6 +3,25 @@
 const connection = require('../config/connection');
 
 
+/* CREATE ORM HELPER FUNCTIONS
+ ============================================================================================== */
+ 
+//Create QuestionMark Function
+
+function createQmarks(num) {
+  let arr = [];
+  for (let i = 0; i < num; i++) {
+    arr.push("?");
+  }
+  return arr.toString(); 
+}
+
+
+
+
+
+
+
 /* CREATE ORM OBJ WITH METHODS FOR DATABASE
  ============================================================================================== */
 const orm = {
