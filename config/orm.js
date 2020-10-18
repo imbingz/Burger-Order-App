@@ -46,7 +46,7 @@ const orm = {
     connection.query(queryStr, (err, result) => {
       if (err) throw err
     })
-    cd(result)
+    cb(result)
   },
 
   //insert method
@@ -57,7 +57,7 @@ const orm = {
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
     });
-    cd(result)
+    cb(result)
   }, 
 
   //update method 
@@ -67,7 +67,7 @@ const orm = {
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
     })
-    cd(result)
+    cb(result)
   },
 
   //delete method
@@ -77,7 +77,7 @@ const orm = {
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
     });
-    cd(result)
+    cb(result)
   }
 }
 
