@@ -17,7 +17,23 @@ function createQmarks(num) {
 }
 
 
+//Create translate object to query string
+function translateSql(obj) {
+  let arr = [];
 
+  for (let key in obj) {
+    value = obj[key];
+    if (Object.hasOwnProperty.call(obj, key)) {
+      // if string with spaces, add quotations 
+      if (typeof value === "string" && value.indexOf(" " >= 0)) {
+        value = "'" + value + "'";
+      }
+      arr.push(key + "=" + value)
+    }
+  }
+
+  return arr.toString();
+}
 
 
 
