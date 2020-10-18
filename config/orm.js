@@ -35,5 +35,15 @@ const orm = {
       if (err) throw err;
     })
     cd(result)
+  },
+
+  //delete method
+  deleteOne: (table, condtion, cb) => {
+    let queryStr = "DELETE FROM " + table + " WHERE " + condtion;
+     
+    connection.query(queryStr, (err, result) => {
+      if (err) throw err;
+    });
+    cd(result)
   }
 }
