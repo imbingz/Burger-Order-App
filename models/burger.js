@@ -13,13 +13,13 @@ const burger = {
       cb(res)
     })
   }, 
-
+  //cols, vals are arrays 
   insertOne: (cols, vals, cb) => {
     orm.insertOne("burgers", cols, vals, (res) => {
       cb(res); 
     })
   },
-  
+  //objColVals is object
   updateOne: (objColVals, condition, cb) => {
     orm.updateOne("burgers", objColVals, condition, (res) => {
       cb(res)
