@@ -12,7 +12,7 @@ const router = express.Router();
 
 //Get route
 router.get('/', (req, res) => {
-  burger.seletAll(data => {
+  burger.selet(data => {
     const hbsObject = {
       burgers: data
     };
@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
 
 //Post route
 router.post('/api/burgers', (req, res) => {
-  burger.insertOne(
+  burger.insert(
     ["burger_name", "devoured"],
     [req.body.burger_name, req.body.devoured],
     (result) => {
@@ -31,4 +31,23 @@ router.post('/api/burgers', (req, res) => {
       res.json({ id: result.insertId });
     }
   );
+});
+
+//Put route
+router.put('/api/burgers/:id', (req, res) => {
+  let condition = "id = " + req.params.id;
+  
+  console.log('condition: ', condition);
+  
+  burger.update(
+    { devoured: req.body.devoured },
+    condition,
+    (result) => {
+      if (result.changedRows === 0) {
+        //if no rows were changed, the ID must not exist. return 404 err
+        return res.status(404).end();
+      } else {
+        res.status(200).end;
+      }
+    });
 });
