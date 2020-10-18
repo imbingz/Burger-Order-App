@@ -21,12 +21,19 @@ const orm = {
     let queryStr = "INSERT INTO " + table + "(" + cols.toString + ")" + "VALUES (" + createQmarks(vals.length) + ");";
 
     console.log(queryStr);
-    
     connection.query(queryStr, (err, result) => {
       if (err) throw err;
     });
     cd(result)
   }, 
 
+  //update method 
+  updateOne: (table, objColVals, condition, cb) => {
+    let queryStr = "UPDATE " + table + " SET " + translateSql(objColVals) + " WHERE " + condition; 
 
+    connection.query(queryStr, (err, result) => {
+      if (err) throw err;
+    })
+    cd(result)
+  }
 }
