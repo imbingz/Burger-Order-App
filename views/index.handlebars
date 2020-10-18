@@ -24,21 +24,13 @@
     {{!-- Dynamically generated list --}}
     <div>
       <ul class="list">
-        <li class="list-item" data-burger="burgerId"> Item 1
-          <button type="submit" class="u-pull-right devour-btn" id="burgerId"><img src="./public/assets/images/2.png"
-              alt="burger_name">
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li class="list-item" data-id="{{this.id}}">
+          {{this.id}}. {{this.burger_name}}
+          <button type="submit" class="u-pull-right devour-btn" data-id="{{this.id}}" data-devoured="false"><img
+              src="/assets/images/2.png" alt="{{this.burger_name}}">
           </button>
-        </li>
-        <li class="list-item" data-burger="burgerId"> Item 2
-          <button type="submit" class="u-pull-right devour-btn" id="burgerId"><img src="./public/assets/images/2.png"
-              alt="burger_name">
-          </button>
-        </li>
-        <li class="list-item" data-burger="burgerId"> Item 3
-          <button type="submit" class="u-pull-right devour-btn" id="burgerId"><img src="./public/assets/images/2.png"
-              alt="burger_name">
-          </button>
-        </li>
       </ul>
     </div>
   </div>
