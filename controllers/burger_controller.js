@@ -57,7 +57,7 @@ router.delete('/api/burgers/:id', (req, res) => {
   let condition = "id = " + req.params.id;
 
   console.log('condition: ', condition);
-  
+
   burger.delte(condition, (result) => {
     if (result.affectedRows === 0) {
       //if no rows were effected, the ID must not exist. Then return 404 err
@@ -67,3 +67,8 @@ router.delete('/api/burgers/:id', (req, res) => {
     }
   });
 });
+
+/* EXPORT ROUTE FOR SERVER.JS TO USE 
+ ============================================================================================== */
+
+module.exports = router; 
