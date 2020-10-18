@@ -1,6 +1,6 @@
 /* IMPORT ORM
  ============================================================================================== */
-const orm = require('../config/orm.js');
+const orm = require('../config/orm');
 
 
 /* CREATE BURGER QUERY WITH ORM TEMPLATE
@@ -10,7 +10,7 @@ const burger = {
    
   selectAll: (cb) => {
     orm.selectAll("burgers", (res) => {
-      cd(res)
+      cb(res)
     })
   }, 
 
