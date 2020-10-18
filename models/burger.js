@@ -13,7 +13,7 @@ const burger = {
       cd(res)
     })
   }, 
-  
+
   insertOne: (cols, vals, cb) => {
     orm.insertOne("burgers", cols, vals, (res) => {
       cb(res); 
@@ -22,11 +22,15 @@ const burger = {
   
   updateOne: (objColVals, condition, cb) => {
     orm.updateOne("burgers", objColVals, condition, (res) => {
-      cd(res)
+      cb(res)
     })
   }, 
 
-
+  deleteOne: (condtion, cb) => {
+    orm.deleteOne("burgers", condtion, (res) => {
+      cb(res);
+    })
+  }
 }
  
 
