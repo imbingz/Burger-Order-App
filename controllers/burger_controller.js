@@ -12,7 +12,7 @@ const router = express.Router();
 
 //Get route
 router.get('/', (req, res) => {
-  burger.selet(data => {
+  burger.select(data => {
     const hbsObject = {
       burgers: data
     };
