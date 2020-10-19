@@ -1,7 +1,7 @@
 //Wait for DOM is fully loaded before attaching controllers
 
 $(function() {
-
+  //send PUT request upon clicking devour-button, the burger-img
   $(".devour-btn").on('click', function() {
 
     console.log('devour-btn clicked');
@@ -12,8 +12,7 @@ $(function() {
     let devourState = {
       devoured: "true"
     };
-    
-    //send PUT request
+
     $.ajax("api/burgers/" + id, {
       type: "PUT",
       data: devourState
