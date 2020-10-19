@@ -60,6 +60,7 @@ form label {
 form textarea {
 	width: 50%;
 	margin: 8px 0;
+	font-size: large;
 }
 
 form button.order-btn {
@@ -96,6 +97,7 @@ ul {
 ul li {
 	margin: 8px auto;
 	padding: 25px 0px 25px 35px;
+	font-size: large;
 }
 
 ul.to-devour li {
