@@ -24,3 +24,30 @@ $(function() {
     });
   });
 });
+
+
+//Send POST request 
+$(".order-btn").on('click', function(event) {
+  console.log('click order btn');
+
+  event.preventDefault();
+
+  let newBurger;
+
+  if ($('textarea').val()) {
+    newBurger = {
+      burger_name: $("textarea").val().trim(),
+      devoured: "false"
+    };
+  }
+
+  console.log(newBurger);
+
+  $.ajax('/api/burgers', {
+    type: "POST",
+    data: newBurger
+  }).then(function() {
+    console.log('Ordered a new burger');
+    location.reload();
+  });
+});
