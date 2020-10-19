@@ -28,7 +28,7 @@ h1 {
 	text-align: center;
 	color: #e74c3a;
 	font-family: "Cabin Sketch";
-	margin: 0;
+	margin: 25px 0 0;
 }
 
 #main-img {
@@ -42,7 +42,6 @@ header img {
 	max-width: 300px;
 	height: auto;
 }
-
 
 /* Enter new burger section */
 
@@ -118,7 +117,6 @@ ul.devoured li {
 	background-color: #fded47;
 	text-align: center;
 }
-
 
 /* Sticky Footer Styling */
 main {
