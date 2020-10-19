@@ -111,3 +111,10 @@ button.devour-btn img {
 	display: inline-block;
 	margin-top: -7px;
 }
+
+/* Burger devoured section */
+
+ul.devoured li {
+	background-color: #fded47;
+	text-align: center;
+}
