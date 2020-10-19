@@ -51,7 +51,7 @@ const orm = {
 
   //insert method
   insertOne: (table, cols, vals, cb) => {
-    let queryStr = "INSERT INTO " + table + "(" + cols.toString + ")" + "VALUES (" + createQmarks(vals.length) + ") ";
+    let queryStr = "INSERT INTO " + table + "(" + cols.toString() + ")" + "VALUES (" + createQmarks(vals.length) + ") ";
 
     console.log(queryStr);
     connection.query(queryStr, (err, result) => {
