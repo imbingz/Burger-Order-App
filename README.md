@@ -56,8 +56,9 @@
  In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install [node.js](https://nodejs.org/en/) and [npm](www.npmjs.com) or [yarn](https://yarnpkg.com/) package manager. Open the cloned REPO in your favorite code editor, make sure you download the package.json, then in terminal, enter the command “npm i" or "npm install"  to install the dependencies [inquirer package](www.npmjs.com/package/inquirer).  Now you are ready to start using  the app by entering “node server.js” on your terminal or gitbash. 
   
   ## Credits and Reference
-  The following link(s) inspired me on the UI design. <br> 
-  [www.canva.com](https://www.canva.com/templates/?query=burger)
+  The following link(s) inspired and helped me with this project: <br> 
+  [www.canva.com](https://www.canva.com/templates/?query=burger) <br>
+  [How to deploy to Heroku with database using Jaws_DB Mysql](https://youtu.be/-K9SXlGaQcA) <br>
 
 
   ## Tests
