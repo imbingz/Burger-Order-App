@@ -43,3 +43,29 @@ header img {
 	height: auto;
 }
 
+
+/* Enter new burger section */
+
+div.form-wrapper {
+	background-color: #ff7b06;
+	margin: 50px;
+	padding: 25px;
+}
+
+form label {
+	font-size: larger;
+	color: #fffbc6;
+	padding: 20px 0;
+}
+
+form textarea {
+	width: 50%;
+	margin: 8px 0;
+}
+
+form button.order-btn {
+	display: flex;
+	background-color: #fffbc6;
+	color: #ff7b06;
+}
+
