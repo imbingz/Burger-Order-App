@@ -26,10 +26,10 @@
       <ul class="list">
         {{#each burgers}}
           {{#unless devoured}}
-        <li class="list-item" data-id="{{this.id}}">
+        <li class="list-item">
           {{this.id}}. {{this.burger_name}}
-          <button type="submit" class="u-pull-right devour-btn" data-id="{{this.id}}" data-devoured="false"><img
-              src="/assets/images/2.png" alt="{{this.burger_name}}">
+          <button type="submit" class="u-pull-right devour-btn" data-id="{{id}}" data-devoured={{devoured}}><img
+              src="/assets/images/2.png" alt="{{burger_name}}">
           </button>
           </li>
             {{/unless}}
@@ -46,7 +46,7 @@
     <ul class="list devoured">
         {{#each burgers}}
         {{#if devoured}}
-        <li class="list-item" data-id="{{this.id}}">
+        <li class="list-item">
           {{this.id}}. {{this.burger_name}}
         </li>
         {{/if}}
