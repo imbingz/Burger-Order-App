@@ -69,3 +69,45 @@ form button.order-btn {
 	color: #ff7b06;
 }
 
+/* Burgers to devour section */
+
+h4 {
+	text-align: center;
+	font-weight: 500;
+}
+
+h4 i.utensil {
+	color: #20cbcb;
+}
+
+h4 i.smile {
+	color: #e74c3a;
+}
+
+div .list {
+	padding: 25px;
+}
+
+ul {
+	list-style: none;
+	margin-left: 5px;
+	padding: 5px;
+}
+
+ul li {
+	margin: 8px auto;
+	padding: 25px 0px 25px 35px;
+}
+
+ul.to-devour li {
+	background-color: #f2c400;
+}
+
+button.devour-btn {
+	border: none;
+}
+
+button.devour-btn img {
+	display: inline-block;
+	margin-top: -7px;
+}
