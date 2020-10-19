@@ -7,8 +7,8 @@
 {{!------  Submit Own Burger Form ------}}
 .<div class="row form-wrapper">
   <form>
-    <label for="addburger">Enter your own favourite burger and click "ORDER NOW" button.</label>
-    <textarea placeholder="My favourite burger ..." id="addburger" name="devoured" class="u-full-width"></textarea>
+    <label for="new-burger">Enter your own favourite burger and click "ORDER NOW" button.</label>
+    <textarea placeholder="My favourite burger ..." id="new-burger" class="u-full-width"></textarea>
     <button class="order-btn" type="submit">Order Now</button>
   </form>
 </div>
@@ -17,17 +17,17 @@
   {{!------  List of burgers to devour ------}}
   <div class="six columns list">
     <div>
-      <h4> Choose a burger to devour
+      <h4> Burgers to devour
         <i class="fa fa-cutlery utensil" aria-hidden="true"></i>
       </h4>
     </div>
     {{!-- Dynamically generated list --}}
     <div>
-      <ul class="list">
+      <ul class="list to-devour">
         {{#each burgers}}
           {{#unless devoured}}
         <li class="list-item">
-          {{this.id}}. {{this.burger_name}}
+          {{id}}. {{burger_name}}
           <button type="submit" class="u-pull-right devour-btn" data-id="{{id}}" data-devoured={{devoured}}><img
               src="/assets/images/2.png" alt="{{burger_name}}">
           </button>
@@ -47,7 +47,7 @@
         {{#each burgers}}
         {{#if devoured}}
         <li class="list-item">
-          {{this.id}}. {{this.burger_name}}
+          {{id}}. {{burger_name}}
         </li>
         {{/if}}
         {{/each}}
