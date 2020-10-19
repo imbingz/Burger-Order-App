@@ -4,11 +4,7 @@ $(function() {
   //send PUT request upon clicking devour-button, the burger-img
   $(".devour-btn").on('click', function() {
 
-    console.log('devour-btn clicked');
-
     let id = $(this).data("id");
-    console.log(id);
-
     let devourState = {
       devoured: "true"
     };
@@ -17,17 +13,14 @@ $(function() {
       type: "PUT",
       data: devourState
     }).then(function() {
-      console.log('change devour state to: ', devourState.devoured);
-
       //reload the page to get the updated list 
       location.reload();
     });
   });
 
   //Send POST request 
-  $(".order-btn").on('click', function(event) {
-    console.log('click order btn');
-
+  $(".order-form").on('submit', function(event) {
+    //Prevent page reload on a submit event
     event.preventDefault();
 
     let newBurger;
@@ -43,7 +36,7 @@ $(function() {
       type: "POST",
       data: newBurger
     }).then(function() {
-      console.log('Ordered a new burger');
+      //Reload page to get the updated list
       location.reload();
     });
   });
