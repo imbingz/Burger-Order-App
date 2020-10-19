@@ -1,5 +1,45 @@
+/*
+colors: 
+#555555; #e74c3a; #ff7b06; #20cbcb; #fffbc6; aliceblue;
+#fded47; #f2c400;
 
+fonts: 
+Cabin Sketch;
+Hind Siliguri; Roboto; Open Sans; Noto Sans JP; 
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
+	/* Top 3 for sticky Footer */
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 	background-color: #fffbc6;
+	font-family: "Open Sans";
+	color: #555555;
 }
+
+h1 {
+	text-align: center;
+	color: #e74c3a;
+	font-family: "Cabin Sketch";
+	margin: 0;
+}
+
+#main-img {
+	text-align: center;
+}
+
+header img {
+	display: inline-block;
+	margin: auto;
+	width: 80%;
+	max-width: 300px;
+	height: auto;
+}
+
