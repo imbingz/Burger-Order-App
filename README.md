@@ -30,7 +30,6 @@
   <kbd>![screenshot-demo1](./public/assets/images/demo.gif)</kbd>
   <kbd>![screenshot-demo1](./public/assets/images/m1.png)</kbd>
   <kbd>![screenshot-demo1](./public/assets/images/m2.png)</kbd>
-  <kbd>![screenshot-demo1](./public/assets/images/m3.png)</kbd>
   
   ## Project Objective
   To create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
