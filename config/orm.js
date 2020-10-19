@@ -70,15 +70,6 @@ const orm = {
     })
   },
 
-  //delete method
-  deleteOne: (table, condtion, cb) => {
-    let queryStr = "DELETE FROM " + table + " WHERE " + condtion;
-     
-    connection.query(queryStr, (err, result) => {
-      if (err) throw err;
-      cb(result)
-    });
-  }
 }
 
 

@@ -26,11 +26,6 @@ const burger = {
     })
   }, 
 
-  delete: (condtion, cb) => {
-    orm.deleteOne("burgers", condtion, (res) => {
-      cb(res);
-    })
-  }
 }
  
 module.exports = burger; 
