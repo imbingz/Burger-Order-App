@@ -23,7 +23,7 @@
   #
 
   ##  Project Links
-  [Heroku Deployed Site -Burger Order App](https://boiling-meadow-98427.herokuapp.com/) <br>
+  [Heroku Deployed Site - Eat Da Burger](https://boiling-meadow-98427.herokuapp.com/) <br>
 
 
   ## Screenshots-Demo
