@@ -28,8 +28,8 @@
 
   ## Screenshots-Demo
   <a href = "https://boiling-meadow-98427.herokuapp.com/" >![screenshot-demo1](./public/assets/images/demo.gif)</a><br><br>
-  <kbd>![screenshot-demo1](./public/assets/images/m1.png)</kbd>
-  <kbd>![screenshot-demo1](./public/assets/images/m2.png)</kbd>
+  <a href = "https://boiling-meadow-98427.herokuapp.com/" >![screenshot-demo1](./public/assets/images/m1.gif)</a>
+  <a href = "https://boiling-meadow-98427.herokuapp.com/" >![screenshot-demo1](./public/assets/images/m2.gif)</a>
   
   ## Project Objective
   To create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
