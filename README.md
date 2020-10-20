@@ -27,7 +27,7 @@
 
 
   ## Screenshots-Demo
-  <kbd>![screenshot-demo1](./public/assets/images/demo.gif)(https://boiling-meadow-98427.herokuapp.com/)</kbd><br><br>
+  <a href = "https://boiling-meadow-98427.herokuapp.com/" >![screenshot-demo1](./public/assets/images/demo.gif)</a><br><br>
   <kbd>![screenshot-demo1](./public/assets/images/m1.png)</kbd>
   <kbd>![screenshot-demo1](./public/assets/images/m2.png)</kbd>
   
