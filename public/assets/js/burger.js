@@ -35,7 +35,7 @@ $(function() {
     $.ajax('/api/burgers', {
       type: "POST",
       data: newBurger
-    }).then(function() {
+    }).then(() => {
       //Reload page to get the updated list
       location.reload();
     });
